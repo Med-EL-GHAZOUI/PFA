@@ -1,0 +1,7 @@
+OK joueurs.csv: 5198 lignes
+OK equipes.csv: 30 lignes
+OK stats_joueurs_par_match_base.csv: 3354 lignes
+OK stats_joueurs_par_match_advanced.csv: 3354 lignes
+OK game_logs_joueurs.csv: 150087 lignes
+OK shotchart_curry_2023-24.csv: 1445 lignes
+OK shotchart_lebron_2023-24.csv: 1269 lignes
