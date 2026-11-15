@@ -1,8 +1,8 @@
 """Telecharge les datasets Kaggle (necessite un compte Kaggle gratuit).
 
-Etapes :
+Fonctionne sans compte pour ces datasets publics. Si Kaggle demande une authentification :
  1. kaggle.com > Settings > API > "Create New Token" -> telecharge kaggle.json
- 2. Placez-le dans  C:\Users\<vous>\.kaggle\kaggle.json
+ 2. Placez-le dans  ~/.kaggle/kaggle.json
  3. pip install kaggle
  4. python scripts/02_download_kaggle.py
 """
@@ -14,7 +14,7 @@ DATASETS = [
     "wyattowalsh/basketball",            # base SQLite NBA 1946-aujourd'hui (grosse)
     "drgilermo/nba-players-stats",       # Seasons_Stats.csv depuis 1950
     "justinas/nba-players-data",         # physique + draft + stats
-    "jonathangmora/nba-shot-locations",  # coordonnees des tirs 1997-2020
+    # "jonathangmora/nba-shot-locations",  # exige une authentification (non telecharge)
     "loganlauton/nba-injury-stats-1951-2023",  # blessures
 ]
 for ds in DATASETS:
