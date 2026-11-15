@@ -1,3 +1,4 @@
 datasets/02_tracking_sportvu/*.json
 __pycache__/
 ~$*
+datasets/05_shots_2004_2025/NBA_*_Shots.csv

@@ -70,9 +70,9 @@ Les identifiants Kaggle sont indiques de memoire : verifiez-les sur le site si u
 
 ## 05_shots_2004_2025 — tous les tirs NBA (saison reguliere)
 
-Source : GitHub `DomSamangy/NBA_Shots_04_25`. 22 fichiers `NBA_<annee>_Shots.csv.zip` (78 Mo, chacun contient un CSV). Environ 200 000+ tirs par saison (ex. 2024 : 218 701 lignes, 26 colonnes).
+Source : GitHub `DomSamangy/NBA_Shots_04_25`. 22 fichiers CSV `NBA_<annee>_Shots.csv` (~0,9 Go au total, extraits des zip ; seuls les zip, 78 Mo, sont sur GitHub, les CSV sont en local). Environ 200 000+ tirs par saison (ex. 2024 : 218 701 lignes, 26 colonnes).
 Colonnes : `PLAYER_ID`, `PLAYER_NAME`, `TEAM_NAME`, `POSITION`, `GAME_DATE`, `GAME_ID`, `EVENT_TYPE`, `SHOT_MADE`, `ACTION_TYPE`, `SHOT_TYPE`, `BASIC_ZONE`, `LOC_X`, `LOC_Y`, `SHOT_DISTANCE`, `QUARTER`, `MINS_LEFT`, `SECS_LEFT`.
-Lecture : `pd.read_csv("NBA_2024_Shots.csv.zip")` (pandas ouvre le zip directement).
+Lecture : `pd.read_csv("NBA_2024_Shots.csv")`. Attention : la saison 2025 a 24 colonnes au lieu de 26.
 Usage IA : modele de probabilite de tir (xFG%), cartes de chaleur, effet de la fatigue/fin de quart-temps. Cible : `SHOT_MADE`.
 
 ## 06_raptor_538 — metriques RAPTOR

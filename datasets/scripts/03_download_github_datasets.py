@@ -31,3 +31,9 @@ for rel, url in FILES.items():
         print("OK ", rel, dest.stat().st_size)
     except Exception as e:
         print("ERR", rel, e)
+
+# Extraction des archives de tirs en CSV (les zip sont conserves)
+import zipfile
+for z in (ROOT / "05_shots_2004_2025").glob("*.zip"):
+    with zipfile.ZipFile(z) as f:
+        f.extract(z.name[:-4], z.parent)
